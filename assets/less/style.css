@@ -2521,7 +2521,7 @@ section__icon--icon1 {
   background-color: #fff;
   position: absolute ;
 }
-.product button a {
+.product button span {
   text-transform: uppercase;
   font-size: 12px;
   line-height: 24px;
@@ -2529,7 +2529,7 @@ section__icon--icon1 {
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
 }
-.product button a:hover {
+.product button span:hover {
   color: #8262b5;
 }
 .product__price {
