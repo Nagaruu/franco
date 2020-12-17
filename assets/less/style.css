@@ -106,9 +106,9 @@ section__icon--icon1 {
 }
 @media (min-width: 640px) and (max-width: 767px) {
   section .topbar__left {
-    display: none;
+    /*display: none;*/
   }
-  /*section .topbar__left .topbar__left__message{
+  section .topbar__left .topbar__left__message{
     padding: 13px 10px 0 0;
     margin-left: 49.5px;
     font-size: 13px;
@@ -116,7 +116,7 @@ section__icon--icon1 {
   section .topbar__left .topbar__left__message i{
     padding-right: 6px;
     font-size: 11px;
-  }*/
+  }
   section .topbar__right__menu {
     padding-right: 50px;
   }
@@ -138,10 +138,53 @@ section__icon--icon1 {
     line-height: 46px;
   }
 }
-@media (min-width: 321px) and (max-width: 639px) {
+@media (min-width: 576px) and (max-width: 639px) {
+  section .topbar__left {
+    /*display: none;*/
+  }
+  section .topbar__left .topbar__left__message{
+    padding: 14px 10px 0 0;
+    font-size: 12px;
+    margin-left: 0;
+  }
+  section .topbar__left .topbar__left__message i{
+    padding-right: 6px;
+    font-size: 11px;
+  }
+  section .topbar .topbar__right .topbar__right__menu{
+    padding-right: 3px;
+  }
+  section .menu {
+    text-align: right;
+  }
+  section .menu__lvl span {
+    display: none;
+  }
+  section .menu__setting {
+    padding-right: 13px;
+  }
+  section .menu__icon {
+    font-size: 16px;
+  }
+  section i {
+    padding-right: 0px;
+    font-size: 14px;
+    line-height: 46px;
+  }
+}
+@media (min-width: 321px) and (max-width: 575px) {
   section .topbar__left {
     display: none;
   }
+  /*section .topbar__left .topbar__left__message{
+    padding: 13px 10px 0 0;
+    margin-left: 49.5px;
+    font-size: 13px;
+  }
+  section .topbar__left .topbar__left__message i{
+    padding-right: 6px;
+    font-size: 11px;
+  }*/
   section .topbar__right__menu {
     padding-right: 0;
   }
