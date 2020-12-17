@@ -108,6 +108,15 @@ section__icon--icon1 {
   section .topbar__left {
     display: none;
   }
+  /*section .topbar__left .topbar__left__message{
+    padding: 13px 10px 0 0;
+    margin-left: 49.5px;
+    font-size: 13px;
+  }
+  section .topbar__left .topbar__left__message i{
+    padding-right: 6px;
+    font-size: 11px;
+  }*/
   section .topbar__right__menu {
     padding-right: 50px;
   }
@@ -3089,6 +3098,9 @@ section__icon--icon1 {
   font-family: "Open Sans", sans-serif;
   letter-spacing: 0.08px;
 }
+.footer__list__item2 .menu .list-1 ul li a:hover {
+  color: #fff;
+}
 .footer__list__item2 .menu .list-2 ul {
   margin-top: 1px;
 }
@@ -3101,6 +3113,9 @@ section__icon--icon1 {
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
   letter-spacing: 0.2px;
+}
+.footer__list__item2 .menu .list-2 ul li a:hover {
+  color: #fff;
 }
 .footer__list__item2 p.navigation {
   font-size: 16px;
