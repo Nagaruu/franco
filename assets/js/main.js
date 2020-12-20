@@ -37,13 +37,3 @@ $(document).ready(function(){
         // jQuery("#overlay").css('visibility', 'hidden');
     });
 });
-
-//overlay
-$(document).ready(function(){
-    
-    $('#btn').on('click', function(){
-       // $(.nav-menu).css("transform",  "translateX('0')");
-        // jQuery('#overlay').css('visibility', '0.5');
-        // jQuery("#overlay").css('visibility', 'visible');
-    });
-});

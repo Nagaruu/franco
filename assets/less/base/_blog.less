@@ -14,7 +14,11 @@
 	h2 {
 		text-align: center;
 		padding-left: 4px;
-		transform: scale(1,1.1);
+		-webkit-transform: scale(1,1.1);
+		   -moz-transform: scale(1,1.1);
+		    -ms-transform: scale(1,1.1);
+		     -o-transform: scale(1,1.1);
+		        transform: scale(1,1.1);
 	}
 
 	h2:before {
@@ -38,7 +42,11 @@
 				position: absolute;
 				width: 60px;
 				height:60px;
-				transform:translate(50%,50%);
+				-webkit-transform: translate(50%,50%);
+				   -moz-transform: translate(50%,50%);
+				    -ms-transform: translate(50%,50%);
+				     -o-transform: translate(50%,50%);
+				        transform: translate(50%,50%);
 				left: -10px;
     			top: -8px;
 
@@ -73,7 +81,7 @@
 			}
 			
 			.card-body {
-				padding: 14px 1.25rem 1.25rem 1.25rem;
+				padding: 15px 1.25rem 1.25rem 1.25rem;
 				height: 136px;
 
 				.card-title {
@@ -90,7 +98,7 @@
 				}
 
 				.blog-detail {
-					padding-top: 15px;
+					padding-top: 14px;
 					margin-left: -1px;
 					line-height: 22px;
 					font-size: 14px;
@@ -137,7 +145,7 @@
 	}
 
 	.space {
-		height: 57px;
+		height: 54px;
 	}
 
 	.btnCarousel {
@@ -155,9 +163,9 @@
 	    outline: none;
 	}
 
-	.btnCarousel {
-		font-size:30px;
-		padding-right: 10px;
+	.owl-dots .owl-dot.active span {
+	    width: 13px;
+    	height: 13px;
 	}
 }
 

@@ -41,7 +41,11 @@
 				letter-spacing: 0.64px;
 				color: #f7f7f7;
 				font-family: 'Montserrat', sans-serif;
-				transform: translate(0px, -1.5px);
+				-webkit-transform: translate(0px, -1.5px);
+				   -moz-transform: translate(0px, -1.5px);
+				    -ms-transform: translate(0px, -1.5px);
+				     -o-transform: translate(0px, -1.5px);
+				        transform: translate(0px, -1.5px);
 			}
 		}
 
@@ -208,8 +212,17 @@
 			.payment-img {
 				text-align: right;
 
-				img {
-				    margin-top: -6px;
+				ul.payment-list {
+
+					li {
+						display: inline-block;
+						padding-left: 1px;
+
+						i {
+							font-size: 20px;
+							color: #888;
+						}
+					}
 				}
 			}
 		}
@@ -423,7 +436,7 @@
 
 				&__text {
 					justify-content: center;
-					font-size: 12px;
+					font-size: 13px;
 				}
 			}
 
