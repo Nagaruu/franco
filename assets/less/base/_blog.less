@@ -1,45 +1,39 @@
 @hr : #ededed;
-.blog{
+
+.blog {
 	margin-top: 59px;
 	background: url(../../assets/image/background-blog.png);
-	// height: 708px;
-	// background-size: cover;
-	&--title{
-		padding: 76px 0 0 8px;
+
+	&--title {
+		text-align: center;
+		padding: 75px 0 0 8px;
 		margin-bottom: 11px;
 		text-transform: uppercase;
-		color: @hover-color;
-		font-size: 11px;
-		letter-spacing: 6.7px;
-		font-family: 'Montserrat', sans-serif;
-		font-weight: 700;
-		text-align: center;
 	}
-	h2{
-		text-transform: uppercase;
-		font-weight: 700;
-		font-size: 24.5px;
-		letter-spacing: 2px;
-		font-family: 'Montserrat', sans-serif;
+
+	h2 {
 		text-align: center;
 		padding-left: 4px;
 		transform: scale(1,1.1);
 	}
-	h2:before{
+
+	h2:before {
 		content: "";
 		position:absolute;
-		height: 49px;
+		height: 48px;
 		width: 50px;
 		margin-left: 93px;
 		border-bottom: 1px solid @hover-color;
 	}
 
-	&__content{
+	&__content {
 		padding-top: 66px;
 		position: relative;
-		.card{
+
+		.card {
 			border: 0;
-			.box-date{
+
+			.box-date {
 				background-color: #a1d1dd;
 				position: absolute;
 				width: 60px;
@@ -47,7 +41,8 @@
 				transform:translate(50%,50%);
 				left: -10px;
     			top: -8px;
-				p.month{
+
+				p.month {
 					list-style: none;
 					font-size: 14px;
 					padding-top: 11px;
@@ -56,7 +51,8 @@
 					font-family: 'Montserrat', sans-serif;
 					margin: 0;
 				}
-				p.date{
+
+				p.date {
 					margin-top: -3px;
 					font-weight: bold;
 					font-size: 16px;
@@ -65,7 +61,8 @@
 					font-family: 'Montserrat', sans-serif;
 				}	
 			}
-			.box-date:before{
+
+			.box-date:before {
 				content:"";
 				position:absolute;
 				right: 5px;
@@ -75,18 +72,24 @@
 				border: 1px solid #fff;
 			}
 			
-			.card-body{
+			.card-body {
 				padding: 14px 1.25rem 1.25rem 1.25rem;
 				height: 136px;
-				// border-bottom: 1px dotted  gray;
-				.card-title{
+
+				.card-title {
+					text-decoration: none;
 					font-size: 15.8px;
 					margin-left: -1px;
 					color: @black;
 					font-weight: 400;
 					font-family: 'Montserrat', sans-serif;
 				}
-				.blog-detail{
+
+				.card-title:hover {
+					color: @hover-color;
+				}
+
+				.blog-detail {
 					padding-top: 15px;
 					margin-left: -1px;
 					line-height: 22px;
@@ -96,405 +99,130 @@
 					letter-spacing: 0.25px;
 				}
 			}
-			
-			
 		}
 
-		.card:before{
-				content: "";
-				position:absolute;
-				height: 335px;
-				width: 100%;
-				border-bottom: 1px solid @hr;
-			}
-		&__footer{
-			height: 55px;
-			padding-top: 14px;
+		&__footer {
+			border-top: 1px solid @hr;
+			padding: 15px 0 15px 0;
 			display: flex;
-			.comment{
+
+			.comment {
+				text-decoration: none;
 				padding-left: 20px;
 			}
-			.like{
+
+			.like {
+				text-decoration: none;
 				margin-left: 32px;
 			}
-			i{
+
+			.comment:hover > * {
+				color: @hover-color;
+			}
+
+			.like:hover > * {
+				color: @hover-color;
+			}
+
+			i {
 				font-size: 14px;
 				color: #c0c0c0;
 			}
-			span{
+
+			span {
 				font-size: 14px;
 				color: #c0c0c0;
 			}
 		}
 	}
-	.space{
-		height: 59px;
+
+	.space {
+		height: 57px;
 	}
+
 	.btnCarousel {
 	    font-size: 30px;
 	    display: none;
 	    padding-right: 10px;
 	}
-	.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+
+	.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
 	    background: @hover-color;
+	    outline: none;
 	}
-	.btnCarousel{
+
+	.owl-theme .owl-dots .owl-dot {
+	    outline: none;
+	}
+
+	.btnCarousel {
 		font-size:30px;
 		padding-right: 10px;
 	}
 }
 
-@media (min-width: 992px) and (max-width: 1199px){
-	.blog{
-		.card:before{
-			height: 400px;
-		}
-		&__content{
-			&__footer{
-				padding-top: 30px;
-				height: 70px;
-			}
-		}
-	}
-}
+@media (min-width: 480px) and (max-width: 767px) {
 
+	.blog {
 
-@media (min-width: 768px) and (max-width: 991px){
-	.blog{
-		.card:before{
-			height: 345px;
-		}
-		&__content{
-			&__footer{
-				padding-top: 35px;
-				height: 70px;
+		&__content {
+
+			&__footer {
+				padding: 12px 0 12px 0;
+				margin-top: 68px;
 			}
 		}
 	}
-}
-@media (min-width: 576px) and (max-width: 767px){
-	.blog{
-		.card:before{
-			height: 343px;
-		}
-		&__content{
-			&__footer{
-				padding-top: 85px;
-				height: 120px;
-			}
-		}
-	}
-}
-@media (min-width: 560px) and (max-width: 575px){
-	.blog{
-		.card:before{
-			height: 350px;
-		}
-		&__content{
-			&__footer{
-				padding-top: 85px;
-				height: 120px;
-			}
-		}
-	}
-}
-@media (min-width: 518px) and (max-width: 559px){
-	.blog{
-		.card:before{
-			height: 345px;
-		}
-		&__content{
-			&__footer{
-				height: 120px;
-				padding-top: 88px;
-			}
-		}
-	}
-	.owl-dots{
+
+	.owl-dots {
 		display: block;
 	}
+
 	.blog .btnCarousel {
 	    display: none;
 	}
 }
-@media (min-width: 480px) and (max-width: 517px){
-	.blog{
-		.card:before{
-			height: 330px;
-		}
-		&__content{
-			&__footer{
-				height: 120px;
-				padding-top: 88px;
+
+@media (min-width: 320px) and (max-width: 479px) {
+
+	.blog {
+
+		&__content {
+
+			&__footer {
+				padding: 10px 0 10px 0;
+				margin-top: 15px;
 			}
 		}
-		
 	}
-	.owl-dots{
-		display: block;
+
+	.owl-dots {
+		display: none;
 	}
+
 	.blog .btnCarousel {
 	    display: none;
 	}
 }
-@media (min-width: 460px) and (max-width: 479px){
-	.blog{
-		.card:before{
-			height: 435px;
-		}
-		&__content{
-			&__footer{
-				padding-top: 70px;
-    			height: 105px;
-			}
-		}
-	}
-	.owl-dots{
-		display: none;
-	}
-	.blog .btnCarousel {
-	    display: block;
-	}
-}
-@media (min-width: 440px) and (max-width: 459px){
-	.blog{
-		.card:before{
-			height: 425px;
-		}
-		&__content{
-			&__footer{
-				padding-top: 70px;
-    			height: 105px;
-			}
-		}
-	}
-	.owl-dots{
-		display: none;
-	}
-	.blog .btnCarousel {
-	    display: block;
-	}
-}
-@media (min-width: 420px) and (max-width: 439px){
-	.blog{
-		.card:before{
-			height: 412px;
-		}
-		&__content{
-			&__footer{
-				padding-top: 70px;
-    			height: 105px;
-			}
-		}
-	}
-	.owl-dots{
-		display: none;
-	}
-	.blog .btnCarousel {
-	    display: block;
-	}
-}
-@media (min-width: 410px) and (max-width: 419px){
-	.blog{
-		.card:before{
-			height: 402px;
-		}
-		&__content{
-			&__footer{
-				padding-top: 70px;
-    			height: 105px;
-			}
-		}
-	}
-	.owl-dots{
-		display: none;
-	}
-	.blog .btnCarousel {
-	    display: block;
-	}
-}
-@media (min-width: 398px) and (max-width: 409px){
-	.blog{
-		.card:before{
-			height: 402px;
-		}
-		&__content{
-			&__footer{
-				padding-top: 70px;
-    			height: 105px;
-			}
-		}
-	}
-	.owl-dots{
-		display: none;
-	}
-	.blog .btnCarousel {
-	    display: block;
-	}
-}
-@media (min-width: 380px) and (max-width: 397px){
-	.blog{
-		.card:before{
-			height: 392px;
-		}
-		&__content{
-			&__footer{
-				padding-top: 70px;
-    			height: 105px;
-			}
-		}
-	}
-	.owl-dots{
-		display: none;
-	}
-	.blog .btnCarousel {
-	    display: block;
-	}
-}
-@media (min-width: 370px) and (max-width: 379px){
-	.blog{
-		.card:before{
-			height: 385px;
-		}
-		&__content{
-			&__footer{
-				padding-top: 70px;
-    			height: 105px;
-			}
-		}
-	}
-	.owl-dots{
-		display: none;
-	}
-	.blog .btnCarousel {
-	    display: block;
-	}
-}
-@media (min-width: 361px) and (max-width: 369px){
-	.blog{
-		.card:before{
-			height: 380px;
-		}
-		&__content{
-			&__footer{
-				padding-top: 70px;
-    			height: 105px;
-			}
-		}
-	}
-	.owl-dots{
-		display: none;
-	}
-	.blog .btnCarousel {
-	    display: block;
-	}
-}
-@media (min-width: 361px) and (max-width: 369px){
-	.blog{
-		.card:before{
-			height: 380px;
-		}
-		&__content{
-			&__footer{
-				padding-top: 70px;
-    			height: 105px;
-			}
-		}
-	}
-	.owl-dots{
-		display: none;
-	}
-	.blog .btnCarousel {
-	    display: block;
-	}
-}
-@media (min-width: 350px) and (max-width: 360px){
-	.blog{
-		.card:before{
-			height: 372px;
-		}
-		&__content{
-			&__footer{
-				padding-top: 70px;
-    			height: 105px;
-			}
-		}
-	}
-	.owl-dots{
-		display: none;
-	}
-	.blog .btnCarousel {
-	    display: block;
-	}
-}
-@media (min-width: 334px) and (max-width: 349px){
-	.blog{
-		.card:before{
-			height: 364px;
-		}
-		&__content{
-			&__footer{
-				padding-top: 70px;
-    			height: 105px;
-			}
-		}
-	}
-	.owl-dots{
-		display: none;
-	}
-	.blog .btnCarousel {
-	    display: block;
-	}
-}
-@media (min-width: 320px) and (max-width: 334px){
-	.blog{
-		.card:before{
-			height: 358px;
-		}
-		&__content{
-			&__footer{
-				padding-top: 70px;
-    			height: 105px;
-			}
-		}
-	}
-	.owl-dots{
-		display: none;
-	}
-	.blog .btnCarousel {
-	    display: block;
-	}
-}
 
-@media (max-width: 319px){
-	.blog{
-		h2{
-			text-transform: uppercase;
-			font-weight: 700;
-			font-size: 20px;
-			letter-spacing: 2px;
-			font-family: 'Montserrat', sans-serif;
-			text-align: center;
-			padding-left: 4px;
-			transform: scale(1,1.1);
-		}
-		h2:before{
-			margin-left: 73px;
-		}
-		.card:before{
-			height: 300px;
-		}
-		&__content{
-			&__footer{
-				padding-top: 38px;
-				height: 70px;
+@media (max-width: 319px) {
+
+	.blog {
+
+		&__content {
+
+			&__footer {
+				padding: 10px 0 10px 0;
+				margin-top: 40px;
 			}
 		}
 	}
-	.owl-dots{
+
+	.owl-dots {
 		display: none;
 	}
+
 	.blog .btnCarousel {
-	    display: block;
+	    display: none;
 	}
 }
