@@ -1,3 +1,4 @@
+
 @number : #999999;
 
 .short-title {
@@ -25,11 +26,7 @@
 		&__text1 {
 			margin-bottom: 6px;
 			margin-left: -0.5px;
-			-webkit-transform: translate(-0.5px, -1px);
-			   -moz-transform: translate(-0.5px, -1px);
-			    -ms-transform: translate(-0.5px, -1px);
-			     -o-transform: translate(-0.5px, -1px);
-			        transform: translate(-0.5px, -1px);
+			.transform(-0.5px, -1px);
 		}
 
 		&__text2 {
@@ -57,6 +54,11 @@
 			}
 		}
 
+		.product-img:hover {
+			transition:all 0.5s ease;
+			opacity: 0.7;
+		}
+
 		&__category {
 
 			.product-img {
@@ -72,11 +74,7 @@
 
 					.star {
 						font-size: 12.4px;
-						-webkit-transform: translate(-2px, 10.5px);
-						   -moz-transform: translate(-2px, 10.5px);
-						    -ms-transform: translate(-2px, 10.5px);
-						     -o-transform: translate(-2px, 10.5px);
-						        transform: translate(-2px, 10.5px);
+						.transform(-2px, 10.5px);
 					}
 
 					.checked {
@@ -139,10 +137,7 @@
 
 	&__price {
 		margin-left: -2px;
-		-webkit-transform: translate(0px, 1px);
-		   -moz-transform: translate(0px, 1px);
-		     -o-transform: translate(0px, 1px);
-		        transform: translate(0px, 1px);
+		.transform(0px, 1px);
 
 		&__old {
 			font-size:16px;

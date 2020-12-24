@@ -1,4 +1,4 @@
-.banner{
+.banner {
 	margin-top: 30px;
 
 	.banner-left {
@@ -39,16 +39,12 @@
 
 		&__bn1 {
 			position: relative;
-
+			
 			.bn1-content {
 				position: absolute;
 				top: calc(50% + 8px);
 				left: calc(50% - 30px);
-				-webkit-transform: translate(-50%,-50%);
-				   -moz-transform: translate(-50%,-50%);
-				    -ms-transform: translate(-50%,-50%);
-				     -o-transform: translate(-50%,-50%);
-				        transform: translate(-50%,-50%);
+				.transform(-50%,-50%);
 			}
 		}
 
@@ -58,11 +54,7 @@
 
 			.bn2-content {
 				position: absolute;
-				-webkit-transform: translate(50%, -50%);
-				   -moz-transform: translate(50%, -50%);
-				    -ms-transform: translate(50%, -50%);
-				     -o-transform: translate(50%, -50%);
-				        transform: translate(50%, -50%);
+				.transform(50%,-50%);
     			top: calc(50% + 19px);
     			left: -5px;
 
