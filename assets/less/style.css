@@ -218,8 +218,8 @@ section__icon--icon1 {
     line-height: 46px;
   }
 }
-@media (max-width: 319px) {
-  section .topbar__left {
+@media (min-width: 0px) and (max-width: 319px) {
+  section .topbar__left__message {
     display: none;
   }
   section .topbar__right__menu {
@@ -235,7 +235,7 @@ section__icon--icon1 {
     padding-right: 13px;
   }
   section .menu__icon {
-    font-size: 16px;
+    font-size: 14px;
   }
   section i {
     padding-right: 0px;
@@ -317,9 +317,42 @@ section__icon--icon1 {
 .header__top__menu li a:hover {
   color: #8262b5;
 }
+.header__top__menu li:nth-child(1) a {
+  color: #8262b5;
+}
 .header__top__menu li#close {
   display: none;
   margin-left: -15px;
+}
+.header__top__menu li.search {
+  position: relative;
+}
+.header__top__menu li.search .search2 {
+  width: 250px;
+  height: 40px;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  transition: all 0.5s ease-in;
+}
+.header__top__menu li.search .search2.hidden {
+  display: none;
+}
+.header__top__menu li.search .search2 form {
+  position: relative;
+}
+.header__top__menu li.search .search2 form input {
+  padding: 10px 35px 10px 15px;
+  width: 100%;
+  height: auto;
+  background-color: #f5f5f5;
+  outline: none;
+  border-radius: 3px;
+}
+.header__top__menu li.search .search2 form i {
+  position: absolute;
+  top: 40%;
+  right: 10px;
 }
 .header__top__menu li.search-input {
   margin-left: -15px;
@@ -871,7 +904,7 @@ section__icon--icon1 {
   }
   .header .nav-overlay .header-overlay {
     z-index: 55;
-    width: 70%;
+    width: 60%;
     height: 100vh;
     top: 0;
     left: -100%;
@@ -1128,53 +1161,49 @@ section__icon--icon1 {
   .header:before {
     border-bottom: 0;
   }
-  .header {
-    border: none;
+  .header__top {
+    position: relative;
     height: 60px;
+    border: 0;
   }
-  .header__logo img.logo {
-    width: 210px;
-    padding-left: 56px;
-    margin: auto;
+  .header__top img.logo {
+    position: absolute;
+    width: 145px;
+    height: 29px;
+    top: 15px;
+    left: 44%;
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
   }
-  .header #btn {
+  .header__top #btn {
     display: block;
     font-size: 19px;
-    cursor: pointer;
+    margin-left: -15px;
+    top: 16px;
   }
-  .header .nav-menu {
-    background-color: #fff;
-  }
-  .header__menu {
-    margin-left: 0;
-    width: 100%;
-    height: 100vh;
-    top: 0px;
-    left: -100%;
-    background-color: #fff;
-    transition: all 0.5s;
-    position: fixed;
-  }
-  .header__cart .cart {
-    -webkit-transform: translate(0px, -2px);
-    -moz-transform: translate(0px, -2px);
-    -ms-transform: translate(0px, -2px);
-    -o-transform: translate(0px, -2px);
-    transform: translate(0px, -2px);
-  }
-  .header__cart .cart .search-icon {
+  .header__top .nav-menu {
     display: none;
   }
-  .header__cart .cart .heart-icon {
-    padding-right: 0px;
-    width: 15px;
-    height: 15px;
+  .header__top__cart .cart {
+    margin-right: -15px;
+    transform: translate(0px, -5px);
   }
-  .header__cart .cart .cart-icon {
-    width: 15px;
-    height: 15px;
+  .header__top__cart .cart .heart-icon {
+    padding-right: 0px;
+    font-size: 23px;
+  }
+  .header__top__cart .cart .cart-icon {
+    font-size: 23px;
+    margin-left: 5px;
   }
   .header .search-navbar {
+    height: 53px;
+    border-bottom: 1px solid #ddd;
+    padding-left: 15px;
+    padding-right: 15px;
     position: relative;
     display: block;
   }
@@ -1183,7 +1212,7 @@ section__icon--icon1 {
     height: 15px;
     width: 15px;
     top: 13px;
-    right: 14px;
+    right: 30px;
   }
   .header .nav-overlay {
     position: absolute;
@@ -1193,7 +1222,7 @@ section__icon--icon1 {
   }
   .header .nav-overlay .header-overlay {
     z-index: 55;
-    width: 40%;
+    width: 80%;
     height: 100vh;
     top: 0;
     left: -100%;
@@ -1285,9 +1314,6 @@ section__icon--icon1 {
   }
   .header .nav-overlay #check:checked ~ #overlay {
     display: block;
-  }
-  .header .owl-dots {
-    display: none;
   }
 }
 .banner {
