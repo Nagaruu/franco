@@ -313,14 +313,18 @@ section {
 	}
 }
 
-@media (max-width: 319px) {
+@media (min-width: 0px) and (max-width: 319px) {
 
 	section {
 
 		.topbar {
 
 			&__left {
-				display: none;
+
+				&__message {
+					display: none;
+	    			
+				}
 			}
 
 			&__right {
@@ -346,7 +350,7 @@ section {
 			}
 
 			&__icon {
-				font-size: 16px;
+				font-size: 14px;
 			}
 		}
 

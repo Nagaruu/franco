@@ -89,3 +89,48 @@ $(document).ready(function(){
     }
 });
 
+//show search form
+$(document).ready(function(){
+    var search_out = document.querySelector('.search-out');
+    var search = document.querySelector('.search2');
+    search_out.addEventListener('click', function() {
+        var tag = $('.search2');
+        if (tag.hasClass('hidden')) {
+            tag.stop().removeClass('hidden').css('opacity' ,'0');
+            tag.resumeTrnsn().css('opacity' ,'1');
+        }else {
+            tag.stop().css('opacity' ,'0').wait(500, function() {
+            tag.addClass('hidden');
+        });
+        }
+    });
+});
+
+$.fn.wait = function (time, fn) {
+    if (time)
+        this.delay(time);
+    if (!fn)
+        return this;
+
+    var _this = this;
+    return this.queue(function (n) {
+        fn.call(_this);
+        n();
+    });
+};
+
+$.fn.resumeTrnsn = function () {
+    return this.each(function (i, tag) {
+        tag.offsetHeight;    
+        tag.style.transition = null;
+    });
+};
+
+//remove icon search
+$(document).ready(function(){
+    var search = document.querySelector('#form-search');
+    search.addEventListener('input', function() {
+        $('.btn-input').hide();
+    });
+    $('.btn-input').show();
+});
