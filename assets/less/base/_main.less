@@ -5,3 +5,13 @@
 	     -o-transform: translate(@x,@y);
 	        transform: translate(@x,@y);
 }
+
+.nth-child(@n) {
+  li:nth-child(@{n}) a:after{
+        font-family: "Font Awesome 5 Free"; content: "\f105";
+		top: 22%;
+		position: absolute;
+		right: 25px;
+		font-size: 19px;
+    }
+}

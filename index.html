@@ -15,7 +15,7 @@
 		<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
 		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
 		<link rel="stylesheet/less" type="text/css" href="assets/less/style.less"/>
-<!-- 		<link rel="stylesheet" type="text/css" href="assets/less/style.css"/> -->
+		<!-- 		<link rel="stylesheet" type="text/css" href="assets/less/style.css"/> -->
 	</head>
 	
 	<body>
@@ -49,87 +49,104 @@
 		</section>
 		<!-- End Topbar -->
 		<!-- Header -->
-		<header class="header">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="header__logo d-flex align-items-center col-2 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-						<label for="check" class="checkbtn" id="btn">
-							<i class="fas fa-bars"></i>
-						</label>
-						<a>
-							<img class="logo" src="assets/image/logo-header.png" alt="franco">
-						</a>
-					</div>
+		<header id="header" class="header">
+			<div class="header__top">
+				<div class="header__top__logo">
+					<label for="check" class="checkbtn" id="btn">
+						<i class="fas fa-bars"></i>
+					</label>
+					<a href="#">
+						<img class="logo" src="assets/image/logo-header.png" alt="franco">
+					</a>
+				</div>
+				
+				<div class="nav-menu" id="navbarContent">		
+					<ul class="header__top__menu">
+						<li class="item">
+							<a href="#">Home</a>
+						</li>
+						<li class="item">
+							<a href="#">Women</a>
+						</li>
+						
+						<li class="item">
+							<a href="#">Men</a>
+						</li>
+						<li class="item">
+							<a href="#">About us</a>
+						</li>
+						<li class="item">
+							<a href="#">Blog</a>
+						</li>
+						<li class="item">
+							<a href="#">Collections</a>
+						</li>
+						<li class="item">
+							<a href="#">Contact</a>
+						</li>
+						<li id="search-out" class="item search">
+							<a href="#"><i class="fas fa-search"></i></a>
+						</li>
+					</ul>			
+				</div>
+
+				<div class="nav-overlay" id="navbarContent">
+					<input type="checkbox" id="check">
 					
-					<nav class="navbar navbar-expand-lg col-6 col-sm-6 col-md-8 col-lg-8 col-xl-8">
-						
-						<div class="nav-menu" id="navbarContent">
-							<input type="checkbox" id="check">
-							
-							<ul class="navbar-nav header__menu">
-								<li id="close">
-									<label for="check">
-										<i class="fas fa-times"></i>
-									</label>
-									
-								</li>
-								
-								
-								<li id="search">
-									<form class="d-flex">
-										<input class="search-input form-control me-2" type="search" placeholder="Search" aria-label="Search">
-										<a href="#" class="nav-link">
-											<img src="assets/image/search.png" alt="">
-										</a>
-									</form>
-								</li>
-								<li class="nav-item">
-									<a href="#" class="nav-link">Home</a>
-								</li>
-								<li class="nav-item">
-									<a href="#" class="nav-link">Women</a>
-								</li>
-								
-								<li class="nav-item">
-									<a href="#" class="nav-link">Men</a>
-								</li>
-								<li class="nav-item">
-									<a href="#" class="nav-link">About us</a>
-								</li>
-								<li class="nav-item">
-									<a href="#" class="nav-link">Blog</a>
-								</li>
-								<li class="nav-item">
-									<a href="#" class="nav-link">Collections</a>
-								</li>
-								<li class="nav-item">
-									<a href="#" class="nav-link">Contact</a>
-								</li>
-								<li class="nav-item search">
-									<a href="#" class="nav-link"><i class="fas fa-search"></i></a>
-								</li>
-							</ul>
-							<label for="check" id="overlay">
+					<ul class="header-overlay">
+						<li id="close">
+							<label id="close-button" class="close" for="check">
+								<i class="fas fa-times"></i>
 							</label>
-							
-						</div>
-						
-						
-					</nav>
-					<div class="header__cart col-4 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-						<div class="cart">
-							<a href="#" class="nav-link"><i class="fas fa-search search-icon"></i></a>
-							<a href="#"><i class="pe-7s-like heart-icon"></i></a>
-							<a href="#"><i class="pe-7s-cart cart-icon"></i></a>
-						</div>
-					</div>
-					<div class="header__search col-12 col-sm-12 col-md-12">
-						<form class="search-navbar">
-							<input class="form-control" type="search" placeholder="What are you looking for?" aria-label="Search">
-							<button type="button"><img src="assets/image/search.png" alt=""></button>
-						</form>
+							<label id="search-button" for="search">
+								<i class="fas fa-search"></i>
+							</label>
+						</li>										
+						<li class="item">
+							<a href="#">Home</a>
+						</li>
+						<li class="item">
+							<a href="#">Women</a>
+						</li>
+						<li class="item">
+							<a href="#">Men</a>
+						</li>
+						<li class="item">
+							<a href="#">About us</a>
+						</li>
+						<li class="item">
+							<a href="#">Blog</a>
+						</li>
+						<li class="item">
+							<a href="#">Collections</a>
+						</li>
+						<li class="item">
+							<a href="#">Contact</a>
+						</li>
+						<li class="item search">
+							<a href="#"><i class="fas fa-search"></i></a>
+						</li>
+					</ul>
+					<label for="check" id="overlay">
+					</label>
+					
+				</div>
+				
+				<div class="header__top__cart">
+					<div class="cart">
+						<a href="#" class="nav-link"><i class="fas fa-search search-icon"></i></a>
+						<a href="#"><i class="pe-7s-like heart-icon"></i></a>
+						<a href="#"><i class="pe-7s-cart cart-icon"></i></a>
 					</div>
 				</div>
+			</div>
+			
+			
+			<div id="header__search" class="header__search">
+				<form class="search-navbar">
+					<input id="form-search" class="form-control" type="search" placeholder="What are you looking for?" aria-label="Search">
+					<button type="button"><img src="assets/image/search.png" alt=""></button>
+				</form>
 			</div>
 		</header>
 		<!-- End Header -->
@@ -586,7 +603,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="space">	
+				<div class="space">
 				</div>
 			</div>
 		</div>
