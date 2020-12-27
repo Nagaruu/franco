@@ -52,8 +52,8 @@ $(document).ready(function(){
 
         var viewportOffset = topbar.getBoundingClientRect();
         var top = viewportOffset.top;
-
-        if (top <= -46) {
+        console.log(top); 
+        if (top <= -46 && $(window).width() >  1200) {
             header.classList.add("sticky");
         } else {
             header.classList.remove("sticky");
@@ -63,8 +63,9 @@ $(document).ready(function(){
         if($(window).width() <  1200)
         {
             if (prevScrollpos > currentScrollPos) {
-                console.log(prevScrollpos);
-                if (prevScrollpos < 50) {
+                
+                if (currentScrollPos < 46) {
+                    
                     $("#header__search").slideDown('fast');
                     $('.header__top').css('border-bottom', '0');
                     $('.search-navbar').css('border-bottom', 'solid 1px #ddd');
@@ -136,5 +137,4 @@ $(document).ready(function(){
         });
     });
 });
-
 

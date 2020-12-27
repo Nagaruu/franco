@@ -29,14 +29,6 @@
     margin-left: auto;
   }
 }
-header nav,
-.container-fluid,
-.row,
-.nav__logo,
-.navbar,
-.nav-logo {
-  height: 100%;
-}
 section .topbar {
   height: 46px;
   background-color: #222222;
@@ -251,6 +243,10 @@ section__icon--icon1 {
   left: 0;
   display: none;
   background: #0000009c;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
   z-index: 1;
 }
@@ -261,10 +257,18 @@ section__icon--icon1 {
   top: 0;
   z-index: 99;
   background-color: #fff;
-  transition: top 0.5s;
+  -webkit-transition: top 0.7s;
+  -moz-transition: top 0.7s;
+  -ms-transition: top 0.7s;
+  -o-transition: top 0.7s;
+  transition: top 0.7s;
 }
 .header.sticky {
   position: fixed;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
   transition: all 0.5s;
 }
 .header__top {
@@ -333,6 +337,10 @@ section__icon--icon1 {
   position: absolute;
   top: 30px;
   right: 0;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
 }
 .header__top__menu li.search .search2.hidden {
@@ -394,17 +402,21 @@ section__icon--icon1 {
   display: none;
 }
 .header .search-navbar {
-  padding-left: 30px;
-  padding-right: 30px;
-  position: relative;
   display: none;
 }
-.header .search-navbar img {
+.header .search-navbar .form-control {
+  padding-left: 2.375rem;
+}
+.header .search-navbar .form-control-feedback {
   position: absolute;
-  height: 15px;
-  width: 15px;
-  top: 13px;
-  right: 60px;
+  z-index: 2;
+  display: none;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
 }
 .header .nav-overlay {
   display: none;
@@ -463,24 +475,12 @@ section__icon--icon1 {
   .header .search-navbar {
     height: 53px;
     border-bottom: 1px solid #ddd;
-    padding-left: 45px;
-    padding-right: 45px;
+    padding: 0 45px 0 45px;
     position: relative;
     display: block;
   }
-  .header .search-navbar .form-control {
-    padding-left: 2.375rem;
-  }
   .header .search-navbar .form-control-feedback {
-    position: absolute;
-    z-index: 2;
     display: block;
-    width: 2.375rem;
-    height: 2.375rem;
-    line-height: 2.375rem;
-    text-align: center;
-    pointer-events: none;
-    color: #aaa;
   }
 }
 @media (min-width: 992px) and (max-width: 1023px) {
@@ -497,8 +497,7 @@ section__icon--icon1 {
     margin-left: 0;
   }
   .header__top__menu li {
-    padding-left: 19px;
-    padding-right: 19px;
+    padding: 0 19px 0 19px;
   }
   .header__top__menu li a {
     font-size: 12px;
@@ -518,24 +517,12 @@ section__icon--icon1 {
   .header .search-navbar {
     height: 53px;
     border-bottom: 1px solid #ddd;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 0 30px 0 30px;
     position: relative;
     display: block;
   }
-  .header .search-navbar .form-control {
-    padding-left: 2.375rem;
-  }
   .header .search-navbar .form-control-feedback {
-    position: absolute;
-    z-index: 2;
     display: block;
-    width: 2.375rem;
-    height: 2.375rem;
-    line-height: 2.375rem;
-    text-align: center;
-    pointer-events: none;
-    color: #aaa;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -569,8 +556,7 @@ section__icon--icon1 {
     display: none;
   }
   .header__top__search {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 0 40px 0 40px;
   }
   .header__top__cart .cart {
     margin-right: 10px;
@@ -585,24 +571,12 @@ section__icon--icon1 {
   .header .search-navbar {
     height: 53px;
     border-bottom: 1px solid #ddd;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 0 40px 0 40px;
     position: relative;
     display: block;
   }
-  .header .search-navbar .form-control {
-    padding-left: 2.375rem;
-  }
   .header .search-navbar .form-control-feedback {
-    position: absolute;
-    z-index: 2;
     display: block;
-    width: 2.375rem;
-    height: 2.375rem;
-    line-height: 2.375rem;
-    text-align: center;
-    pointer-events: none;
-    color: #aaa;
   }
   .header .nav-overlay {
     position: absolute;
@@ -612,11 +586,15 @@ section__icon--icon1 {
   }
   .header .nav-overlay .header-overlay {
     z-index: 55;
-    width: 40%;
+    width: 50%;
     height: 100vh;
     top: 0;
     left: -100%;
     background-color: #fff;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
     transition: all 0.5s;
     position: fixed;
     list-style: none;
@@ -627,7 +605,7 @@ section__icon--icon1 {
     font-weight: 700;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
-    font-size: 13px;
+    font-size: 14px;
     float: left;
     padding: 14px 25px;
     width: 100%;
@@ -686,6 +664,7 @@ section__icon--icon1 {
   .header .nav-overlay .header-overlay li#close label.close i {
     font-size: 27px;
     padding: 18px 30px 30px 30px;
+    color: #000;
   }
   .header .nav-overlay .header-overlay li#close label#search-button {
     float: left;
@@ -753,24 +732,12 @@ section__icon--icon1 {
   .header .search-navbar {
     height: 53px;
     border-bottom: 1px solid #ddd;
-    padding-left: 65px;
-    padding-right: 65px;
+    padding: 0 65px 0 65px;
     position: relative;
     display: block;
   }
-  .header .search-navbar .form-control {
-    padding-left: 2.375rem;
-  }
   .header .search-navbar .form-control-feedback {
-    position: absolute;
-    z-index: 2;
     display: block;
-    width: 2.375rem;
-    height: 2.375rem;
-    line-height: 2.375rem;
-    text-align: center;
-    pointer-events: none;
-    color: #aaa;
   }
   .header .nav-overlay {
     position: absolute;
@@ -785,6 +752,10 @@ section__icon--icon1 {
     top: 0;
     left: -100%;
     background-color: #fff;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
     transition: all 0.5s;
     position: fixed;
     list-style: none;
@@ -795,7 +766,7 @@ section__icon--icon1 {
     font-weight: 700;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
-    font-size: 13px;
+    font-size: 14px;
     float: left;
     padding: 14px 25px;
     width: 100%;
@@ -929,24 +900,12 @@ section__icon--icon1 {
   .header .search-navbar {
     height: 53px;
     border-bottom: 1px solid #ddd;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0 15px 0 15px;
     position: relative;
     display: block;
   }
-  .header .search-navbar .form-control {
-    padding-left: 2.375rem;
-  }
   .header .search-navbar .form-control-feedback {
-    position: absolute;
-    z-index: 2;
     display: block;
-    width: 2.375rem;
-    height: 2.375rem;
-    line-height: 2.375rem;
-    text-align: center;
-    pointer-events: none;
-    color: #aaa;
   }
   .header .nav-overlay {
     position: absolute;
@@ -961,6 +920,10 @@ section__icon--icon1 {
     top: 0;
     left: -100%;
     background-color: #fff;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
     transition: all 0.5s;
     position: fixed;
     list-style: none;
@@ -971,7 +934,7 @@ section__icon--icon1 {
     font-weight: 700;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
-    font-size: 13px;
+    font-size: 14px;
     float: left;
     padding: 14px 25px;
     width: 100%;
@@ -1098,24 +1061,12 @@ section__icon--icon1 {
   .header .search-navbar {
     height: 53px;
     border-bottom: 1px solid #ddd;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0 15px 0 15px;
     position: relative;
     display: block;
   }
-  .header .search-navbar .form-control {
-    padding-left: 2.375rem;
-  }
   .header .search-navbar .form-control-feedback {
-    position: absolute;
-    z-index: 2;
     display: block;
-    width: 2.375rem;
-    height: 2.375rem;
-    line-height: 2.375rem;
-    text-align: center;
-    pointer-events: none;
-    color: #aaa;
   }
   .header .nav-overlay {
     position: absolute;
@@ -1130,6 +1081,10 @@ section__icon--icon1 {
     top: 0;
     left: -100%;
     background-color: #fff;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
     transition: all 0.5s;
     position: fixed;
     list-style: none;
@@ -1140,7 +1095,7 @@ section__icon--icon1 {
     font-weight: 700;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
-    font-size: 13px;
+    font-size: 14px;
     float: left;
     padding: 14px 25px;
     width: 100%;
@@ -1267,24 +1222,12 @@ section__icon--icon1 {
   .header .search-navbar {
     height: 53px;
     border-bottom: 1px solid #ddd;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0 15px 0 15px;
     position: relative;
     display: block;
   }
-  .header .search-navbar .form-control {
-    padding-left: 2.375rem;
-  }
   .header .search-navbar .form-control-feedback {
-    position: absolute;
-    z-index: 2;
     display: block;
-    width: 2.375rem;
-    height: 2.375rem;
-    line-height: 2.375rem;
-    text-align: center;
-    pointer-events: none;
-    color: #aaa;
   }
   .header .nav-overlay {
     position: absolute;
@@ -1299,6 +1242,10 @@ section__icon--icon1 {
     top: 0;
     left: -100%;
     background-color: #fff;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
     transition: all 0.5s;
     position: fixed;
     list-style: none;
