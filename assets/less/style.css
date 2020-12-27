@@ -468,6 +468,20 @@ section__icon--icon1 {
     position: relative;
     display: block;
   }
+  .header .search-navbar .form-control {
+    padding-left: 2.375rem;
+  }
+  .header .search-navbar .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+  }
 }
 @media (min-width: 992px) and (max-width: 1023px) {
   .header:before {
@@ -509,8 +523,19 @@ section__icon--icon1 {
     position: relative;
     display: block;
   }
-  .header .search-navbar img {
-    right: 45px;
+  .header .search-navbar .form-control {
+    padding-left: 2.375rem;
+  }
+  .header .search-navbar .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -565,12 +590,19 @@ section__icon--icon1 {
     position: relative;
     display: block;
   }
-  .header .search-navbar img {
+  .header .search-navbar .form-control {
+    padding-left: 2.375rem;
+  }
+  .header .search-navbar .form-control-feedback {
     position: absolute;
-    height: 15px;
-    width: 15px;
-    top: 13px;
-    right: 60px;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
   }
   .header .nav-overlay {
     position: absolute;
@@ -603,6 +635,9 @@ section__icon--icon1 {
   }
   .header .nav-overlay .header-overlay li i {
     font-size: 20px;
+  }
+  .header .nav-overlay .header-overlay li:nth-child(2) a {
+    color: #8262b5;
   }
   .header .nav-overlay .header-overlay li:nth-child(3) a:after {
     font-family: "Font Awesome 5 Free";
@@ -723,12 +758,19 @@ section__icon--icon1 {
     position: relative;
     display: block;
   }
-  .header .search-navbar img {
+  .header .search-navbar .form-control {
+    padding-left: 2.375rem;
+  }
+  .header .search-navbar .form-control-feedback {
     position: absolute;
-    height: 15px;
-    width: 15px;
-    top: 13px;
-    right: 80px;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
   }
   .header .nav-overlay {
     position: absolute;
@@ -761,6 +803,9 @@ section__icon--icon1 {
   }
   .header .nav-overlay .header-overlay li i {
     font-size: 20px;
+  }
+  .header .nav-overlay .header-overlay li:nth-child(2) a {
+    color: #8262b5;
   }
   .header .nav-overlay .header-overlay li:nth-child(3) a:after {
     font-family: "Font Awesome 5 Free";
@@ -889,12 +934,19 @@ section__icon--icon1 {
     position: relative;
     display: block;
   }
-  .header .search-navbar img {
+  .header .search-navbar .form-control {
+    padding-left: 2.375rem;
+  }
+  .header .search-navbar .form-control-feedback {
     position: absolute;
-    height: 15px;
-    width: 15px;
-    top: 13px;
-    right: 30px;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
   }
   .header .nav-overlay {
     position: absolute;
@@ -927,6 +979,9 @@ section__icon--icon1 {
   }
   .header .nav-overlay .header-overlay li i {
     font-size: 20px;
+  }
+  .header .nav-overlay .header-overlay li:nth-child(2) a {
+    color: #8262b5;
   }
   .header .nav-overlay .header-overlay li:nth-child(3) a:after {
     font-family: "Font Awesome 5 Free";
@@ -1048,12 +1103,19 @@ section__icon--icon1 {
     position: relative;
     display: block;
   }
-  .header .search-navbar img {
+  .header .search-navbar .form-control {
+    padding-left: 2.375rem;
+  }
+  .header .search-navbar .form-control-feedback {
     position: absolute;
-    height: 15px;
-    width: 15px;
-    top: 13px;
-    right: 30px;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
   }
   .header .nav-overlay {
     position: absolute;
@@ -1086,6 +1148,9 @@ section__icon--icon1 {
   }
   .header .nav-overlay .header-overlay li i {
     font-size: 20px;
+  }
+  .header .nav-overlay .header-overlay li:nth-child(2) a {
+    color: #8262b5;
   }
   .header .nav-overlay .header-overlay li:nth-child(3) a:after {
     font-family: "Font Awesome 5 Free";
@@ -1207,12 +1272,19 @@ section__icon--icon1 {
     position: relative;
     display: block;
   }
-  .header .search-navbar img {
+  .header .search-navbar .form-control {
+    padding-left: 2.375rem;
+  }
+  .header .search-navbar .form-control-feedback {
     position: absolute;
-    height: 15px;
-    width: 15px;
-    top: 13px;
-    right: 30px;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
   }
   .header .nav-overlay {
     position: absolute;
@@ -1245,6 +1317,9 @@ section__icon--icon1 {
   }
   .header .nav-overlay .header-overlay li i {
     font-size: 20px;
+  }
+  .header .nav-overlay .header-overlay li:nth-child(2) a {
+    color: #8262b5;
   }
   .header .nav-overlay .header-overlay li:nth-child(3) a:after {
     font-family: "Font Awesome 5 Free";

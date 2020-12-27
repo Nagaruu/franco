@@ -65,7 +65,7 @@ $(document).ready(function(){
             if (prevScrollpos > currentScrollPos) {
                 console.log(prevScrollpos);
                 if (prevScrollpos < 10) {
-                    $("#header__search").show();
+                    $("#header__search").slideDown('fast');
                     $('.header__top').css('border-bottom', '0');
                     $('.search-navbar').css('border-bottom', 'solid 1px #ddd');
                 } else {
@@ -101,7 +101,7 @@ $(document).ready(function(){
         }else {
             tag.stop().css('opacity' ,'0').wait(500, function() {
             tag.addClass('hidden');
-        });
+            });
         }
     });
 });
@@ -126,11 +126,15 @@ $.fn.resumeTrnsn = function () {
     });
 };
 
-//remove icon search
+//disable enable search icon
 $(document).ready(function(){
     var search = document.querySelector('#form-search');
     search.addEventListener('input', function() {
-        $('.btn-input').hide();
+        $('.form-control-feedback').css({
+            'color':'#000',
+            'pointer-events':'auto'
+        });
     });
-    $('.btn-input').show();
 });
+
+
