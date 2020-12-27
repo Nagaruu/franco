@@ -64,7 +64,7 @@ $(document).ready(function(){
         {
             if (prevScrollpos > currentScrollPos) {
                 console.log(prevScrollpos);
-                if (prevScrollpos < 10) {
+                if (prevScrollpos < 50) {
                     $("#header__search").slideDown('fast');
                     $('.header__top').css('border-bottom', '0');
                     $('.search-navbar').css('border-bottom', 'solid 1px #ddd');
