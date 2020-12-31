@@ -1357,15 +1357,20 @@ section__icon--icon1 {
   width: 106px;
   height: 40px;
   background-color: #8262b5;
+  transition: all 0.3s linear;
 }
-.banner .banner-left__content .left-button a {
+.banner .banner-left__content .left-button span {
   color: #fff;
   font-weight: 400;
   font-size: 14px;
   font-family: 'Montserrat', sans-serif;
 }
-.banner .banner-left__content .left-button a:hover {
+.banner .banner-left__content .left-button:hover {
+  background-color: #000;
   text-decoration: none;
+}
+.banner .banner-left__content .left-button:hover span {
+  color: #fff;
 }
 .banner .banner-right__bn1 {
   position: relative;
@@ -1399,17 +1404,25 @@ section__icon--icon1 {
   width: 108px;
   height: 40px;
   background-color: #8262b5;
-  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
-.banner .banner-right__bn2 .bn2-content .right-button a {
+.banner .banner-right__bn2 .bn2-content .right-button span {
   color: #fff;
   font-weight: 400;
   font-size: 14px;
   padding-left: 7px;
   font-family: 'Montserrat', sans-serif;
 }
-.banner .banner-right__bn2 .bn2-content .right-button a:hover {
+.banner .banner-right__bn2 .bn2-content .right-button:hover {
+  background-color: #000;
   text-decoration: none;
+}
+.banner .banner-right__bn2 .bn2-content .right-button:hover span {
+  color: #fff;
 }
 .banner .banner-right .large-text {
   text-transform: uppercase;
@@ -1845,13 +1858,15 @@ section__icon--icon1 {
 }
 .product__content__row2 .product-img {
   position: relative;
+  transition: all 0.7s ease;
 }
 .product__content .product-img:hover {
-  transition: all 0.5s ease;
+  transition: all 0.7s ease;
   opacity: 0.7;
 }
 .product__content__category .product-img {
   position: relative;
+  transition: all 0.5s ease;
 }
 .product__content__category .rate {
   font-size: 0;
@@ -1902,6 +1917,20 @@ section__icon--icon1 {
   background-color: #fff;
   position: absolute;
   margin: 0 0 5px 5px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.product button a {
+  left: 0;
+  bottom: 0;
+  width: 118px;
+  height: 40px;
+  background-color: #fff;
+  position: absolute;
+  margin: 0 0 5px 5px;
 }
 .product button span {
   text-transform: uppercase;
@@ -1911,7 +1940,10 @@ section__icon--icon1 {
   font-weight: 400;
   font-family: 'Montserrat', sans-serif;
 }
-.product button span:hover {
+.product button:hover {
+  border: 1px solid #8262b5;
+}
+.product button:hover span {
   color: #8262b5;
 }
 .product__price {
@@ -2022,6 +2054,9 @@ section__icon--icon1 {
 .blog__content {
   padding-top: 66px;
   position: relative;
+}
+.blog__content .list-item {
+  cursor: pointer;
 }
 .blog__content .card {
   border: 0;
@@ -2199,13 +2234,15 @@ section__icon--icon1 {
   padding-top: 30px;
   display: flex;
 }
-.footer__list__item1 .description .footer-icon i {
+.footer__list__item1 .description .footer-icon a {
+  margin-right: 32.5px;
+}
+.footer__list__item1 .description .footer-icon a i {
   display: inline-block;
-  padding-right: 32.5px;
   color: #888888;
   font-size: 15px;
 }
-.footer__list__item1 .description .footer-icon i:hover {
+.footer__list__item1 .description .footer-icon a i:hover {
   color: #fff;
 }
 .footer__list__item1 p.about {
@@ -2278,7 +2315,10 @@ section__icon--icon1 {
   font-family: 'Montserrat', sans-serif;
 }
 .footer__list__item3 table {
-  margin: 41px 0 0 28px;
+  margin: 11px 0 0 28px;
+}
+.footer__list__item3 table tr td.one-line {
+  padding-top: 30px;
 }
 .footer__list__item3 table tr td {
   letter-spacing: 0.1px;
@@ -2347,6 +2387,10 @@ section__icon--icon1 {
 .footer .copyright-pay .payment .payment-img ul.payment-list li i {
   font-size: 20px;
   color: #888;
+  cursor: pointer;
+}
+.footer .copyright-pay .payment .payment-img ul.payment-list li i:hover {
+  color: #fff;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .footer__list__item2 p.navigation:before {

@@ -52,7 +52,6 @@ $(document).ready(function(){
 
         var viewportOffset = topbar.getBoundingClientRect();
         var top = viewportOffset.top;
-        console.log(top); 
         if (top <= -46 && $(window).width() >  1200) {
             header.classList.add("sticky");
         } else {
@@ -138,3 +137,8 @@ $(document).ready(function(){
     });
 });
 
+$(document).ready(function(){
+    $(".list-item").click(function(){
+      window.location.href = '#';
+    });
+});

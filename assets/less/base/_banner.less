@@ -20,16 +20,22 @@
 				width: 106px;
 				height: 40px;
 				background-color: #8262b5;
+				transition: all .3s linear;
 
-				a {
+				span {
 					color: #fff;	
 					font-weight:400;
 					font-size: 14px;
 					font-family: 'Montserrat', sans-serif;
 				}
+			}
 
-				a:hover {
-					text-decoration: none;	
+			.left-button:hover {
+				background-color: #000;
+				text-decoration: none;
+
+				span {
+					color: #fff;
 				}
 			}
 		}
@@ -63,18 +69,23 @@
 					width: 108px;
 					height: 40px;
 					background-color: #8262b5;
-					cursor: pointer;
+					.transition(0.3s);
 
-					a {
+					span {
 						color: #fff;	
 						font-weight:400;
 						font-size: 14px;
 						padding-left: 7px;
 						font-family: 'Montserrat', sans-serif;
 					}
+				}
 
-					a:hover {
-						text-decoration: none;	
+				.right-button:hover {
+					background-color: #000;
+					text-decoration: none;
+
+					span {
+						color: #fff;
 					}
 				}
 			}
