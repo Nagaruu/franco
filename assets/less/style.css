@@ -1358,8 +1358,6 @@ section__icon--icon1 {
   height: 40px;
   background-color: #8262b5;
   transition: all 0.3s linear;
-}
-.banner .banner-left__content .left-button span {
   color: #fff;
   font-weight: 400;
   font-size: 14px;
@@ -1368,9 +1366,6 @@ section__icon--icon1 {
 .banner .banner-left__content .left-button:hover {
   background-color: #000;
   text-decoration: none;
-}
-.banner .banner-left__content .left-button:hover span {
-  color: #fff;
 }
 .banner .banner-right__bn1 {
   position: relative;
@@ -1409,8 +1404,6 @@ section__icon--icon1 {
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-}
-.banner .banner-right__bn2 .bn2-content .right-button span {
   color: #fff;
   font-weight: 400;
   font-size: 14px;
@@ -1420,9 +1413,6 @@ section__icon--icon1 {
 .banner .banner-right__bn2 .bn2-content .right-button:hover {
   background-color: #000;
   text-decoration: none;
-}
-.banner .banner-right__bn2 .bn2-content .right-button:hover span {
-  color: #fff;
 }
 .banner .banner-right .large-text {
   text-transform: uppercase;
@@ -1452,8 +1442,6 @@ section__icon--icon1 {
   .banner .banner-left__content .left-button {
     width: 85px;
     height: 34px;
-  }
-  .banner .banner-left__content .left-button a {
     font-size: 12px;
   }
   .banner .banner-left img {
@@ -1482,8 +1470,6 @@ section__icon--icon1 {
   .banner .banner-right__bn2 .bn2-content .right-button {
     width: 85px;
     height: 34px;
-  }
-  .banner .banner-right__bn2 .bn2-content .right-button a {
     font-size: 12px;
   }
   .banner .banner-right__bn2 img.bn2-img {
@@ -1510,8 +1496,6 @@ section__icon--icon1 {
   .banner .banner-left__content .left-button {
     width: 88px;
     height: 32px;
-  }
-  .banner .banner-left__content .left-button a {
     font-size: 12px;
   }
   .banner .banner-left img {
@@ -1535,8 +1519,6 @@ section__icon--icon1 {
   .banner .banner-right__bn2 .bn2-content .right-button {
     width: 88px;
     height: 32px;
-  }
-  .banner .banner-right__bn2 .bn2-content .right-button a {
     font-size: 12px;
   }
   .banner .banner-right__bn2 img.bn2-img {
@@ -1560,8 +1542,6 @@ section__icon--icon1 {
   .banner .banner-left__content .left-button {
     width: 81px;
     height: 30px;
-  }
-  .banner .banner-left__content .left-button a {
     font-size: 11px;
   }
   .banner .banner-left img {
@@ -1586,8 +1566,6 @@ section__icon--icon1 {
   .banner .banner-right__bn2 .bn2-content .right-button {
     width: 81px;
     height: 30px;
-  }
-  .banner .banner-right__bn2 .bn2-content .right-button a {
     font-size: 10px;
   }
   .banner .banner-right__bn2 img.bn2-img {
@@ -1615,8 +1593,6 @@ section__icon--icon1 {
   .banner .banner-left__content .left-button {
     width: 84px;
     height: 32px;
-  }
-  .banner .banner-left__content .left-button a {
     font-size: 12px;
   }
   .banner .banner-left img {
@@ -1639,8 +1615,6 @@ section__icon--icon1 {
   .banner .banner-right__bn2 .bn2-content .right-button {
     width: 84px;
     height: 32px;
-  }
-  .banner .banner-right__bn2 .bn2-content .right-button a {
     font-size: 12px;
   }
   .banner .banner-right__bn2 img.bn2-img {
@@ -1668,8 +1642,6 @@ section__icon--icon1 {
   .banner .banner-left__content .left-button {
     width: 65px;
     height: 27px;
-  }
-  .banner .banner-left__content .left-button a {
     font-size: 10px;
   }
   .banner .banner-left img {
@@ -1692,8 +1664,6 @@ section__icon--icon1 {
   .banner .banner-right__bn2 .bn2-content .right-button {
     width: 70px;
     height: 27px;
-  }
-  .banner .banner-right__bn2 .bn2-content .right-button a {
     font-size: 10px;
   }
   .banner .banner-right__bn2 img.bn2-img {
@@ -1721,8 +1691,6 @@ section__icon--icon1 {
   .banner .banner-left__content .left-button {
     width: 65px;
     height: 27px;
-  }
-  .banner .banner-left__content .left-button a {
     font-size: 10px;
   }
   .banner .banner-left img {
@@ -1745,8 +1713,6 @@ section__icon--icon1 {
   .banner .banner-right__bn2 .bn2-content .right-button {
     width: 70px;
     height: 27px;
-  }
-  .banner .banner-right__bn2 .bn2-content .right-button a {
     font-size: 10px;
   }
   .banner .banner-right__bn2 img.bn2-img {
@@ -1774,8 +1740,6 @@ section__icon--icon1 {
   .banner .banner-left__content .left-button {
     width: 65px;
     height: 27px;
-  }
-  .banner .banner-left__content .left-button a {
     font-size: 10px;
   }
   .banner .banner-left img {
@@ -1798,8 +1762,6 @@ section__icon--icon1 {
   .banner .banner-right__bn2 .bn2-content .right-button {
     width: 70px;
     height: 27px;
-  }
-  .banner .banner-right__bn2 .bn2-content .right-button a {
     font-size: 10px;
   }
   .banner .banner-right__bn2 img.bn2-img {
